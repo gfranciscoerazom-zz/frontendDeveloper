@@ -7,12 +7,29 @@
     <title>Declaraciones en CSS</title>
 </head>
 <style>
-    p {
+    /* Pseudo-clases */
+    p:first-child {
+        color: pink;
+    }
+    p:last-child {
+        color: blue;
+    }
+    p:nth-child(2n){
+        color: aqua;
+    }
+    p:nth-child(2n+1){
+        color: fuchsia;
+    }
+    /* Pseudo-elementos */
+    p::first-letter {
         color: red;
+        font-size: 20px;
     }
 </style>
 <body>
-    <p>Hola Mundo Feliz</p>
-    <p>Hola Mundo</p>
+    <p>Conejo 🐰</p>
+    <p>Perro 🐶</p>
+    <p>Vaca 🐮</p>
+    <p>Sapo 🐸</p>
 </body>
 </html>
